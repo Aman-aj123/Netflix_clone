@@ -1,0 +1,602 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+     width: 100%;
+     height: 100%;
+}
+
+body {
+     background: var(--bg-black);
+     transition: .3s ease-in;
+}
+
+/* defining colors variables  */
+:root {
+     --bg-black: #000000;
+     --white-color: #ffffff;
+     --black-color: #000000;
+     --gray-color: rgb(52, 50, 50);
+     --border-color: rgb(52, 51, 51);
+     ---txt-primary-clr: rgb(207, 198, 198);
+     --question-bg: #2D2D2D;
+     --question-hover-clr: #1e1d1d;
+     --quesEmailBg: rgb(54 49 49);
+}
+
+/* white mode colors  */
+.white-mode {
+     --bg-black: hsl(0, 0%, 100%);
+     --white-color: #000000;
+     --black-color: #ffffff;
+     --gray-color: rgb(196, 191, 191);
+     ---txt-primary-clr: rgb(19, 19, 19);
+     --border-color: rgb(238, 232, 232);
+     --question-bg: #e5e2e2;
+     --question-hover-clr: #cac6c6;
+     --quesEmailBg: rgba(199, 196, 196, 0.7);
+}
+
+/* ========== Starting defining utility classes  ========== */
+.full-flex {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.flex {
+     display: flex;
+}
+
+.flex-center {
+     justify-content: center;
+}
+
+.flex-around {
+     justify-content: space-around;
+}
+
+.flex-between {
+     justify-content: space-between;
+}
+
+.btn-primary {
+     transition: .2s ease-in;
+     cursor: pointer;
+}
+
+.btn-primary:hover {
+     opacity: .6;
+}
+
+.txt-center {
+     text-align: center;
+}
+
+.common-para {
+     font-size: 1.3rem;
+}
+
+.common-margin {
+     margin-left: 10px;
+}
+
+/* colors  */
+.txt-white {
+     color: var(--white-color);
+}
+
+.txt-black {
+     color: var(--black-color);
+}
+
+button {
+     white-space: nowrap;
+}
+
+/* ========== Ending defining utility classes  ========== */
+
+
+/* Main Hero */
+#main-hero {
+     width: 100%;
+     position: relative;
+     height: fit-content;
+     background: url('images/main-bg.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     z-index: 9;
+     border-bottom: 10px solid var(--border-color);
+     padding-bottom: 140px;
+}
+
+/* Themes option  */
+.themes-option i {
+     color: white;
+     font-size: 23px;
+     cursor: pointer;
+     transition: .3s ease-in;
+}
+
+/* hero-overlay  */
+#main-hero .hero-overlay {
+     height: 100%;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.7);
+     position: absolute;
+     top: 0;
+     z-index: -1;
+}
+
+/* =============== Starting Header Section =============== */
+header {
+     height: 90px;
+     padding: 0px 40px 0px 20px;
+}
+
+header .logo img {
+     width: 190px;
+}
+
+header .header-content {
+     gap: 25px;
+     font-size: 16px;
+}
+
+.header-content select {
+     width: 100px;
+     padding: 5px 6px;
+     background: rgba(0, 0, 0, 0.7);
+     border: 2px solid gainsboro;
+     border-radius: 5px;
+     font-weight: 500;
+     letter-spacing: .80px;
+     color: white;
+     font-size: .98em;
+}
+
+.header-content select option {
+     font-weight: 500;
+     font-size: .90em;
+}
+
+.header-content button {
+     background: #E50914;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     padding: 8px 5px;
+     font-weight: 600;
+     letter-spacing: .80px;
+     font-size: .90em;
+     color: #ffffff;
+}
+
+
+/* =============== Starting Hero Section =============== */
+#hero {
+     width: 100%;
+     font-size: 16px;
+     margin-top: 110px;
+}
+
+#hero .hero-txt {
+     font-size: 16px;
+}
+
+#hero .hero-txt h1:nth-child(1) {
+     font-size: 2.9em;
+     letter-spacing: .70px;
+     font-weight: 900;
+     text-align: center;
+     line-height: 1.2;
+     width: 90%;
+}
+
+
+
+#hero .hero-txt p:nth-child(2) {
+     margin: 20px 0;
+}
+
+#hero .hero-txt p {
+     font-size: 1.3em;
+     text-align: center;
+}
+
+.details-sect {
+     font-size: 16px;
+     margin-top: 30px;
+     height: 54px;
+     overflow: hidden;
+     width: 100%;
+}
+
+.details-sect input {
+     width: 50%;
+     border-radius: 5px;
+     border: 1px solid rgb(78, 77, 77);
+     background: rgba(0, 0, 0, 0.7);
+     padding: 0px 3px;
+     padding-left: 20px;
+     color: white;
+     font-size: 1em;
+     letter-spacing: .80px;
+     outline: none;
+     height: 100%;
+}
+
+.details-sect input::placeholder {
+     color: rgb(226, 222, 222);
+}
+
+.details-sect button {
+     font-size: 1.3em;
+     letter-spacing: .80px;
+     font-weight: 500;
+     background: #E50914;
+     border: none;
+     border-radius: 5px;
+     padding: 0px 14px;
+     height: 100%;
+
+}
+
+
+/* =============== Ending Hero Section =============== */
+
+
+
+
+
+
+/* ================ Starting Videos Hero Section  ================ */
+#videos-sect {
+     width: 100%;
+}
+
+#videos-sect .video-items {
+     padding-top: 140px;
+     font-size: 16px;
+     border-bottom: 10px solid var(--border-color);
+     padding-bottom: 90px;
+     flex-wrap: wrap;
+}
+
+#videos-sect .third .video-image video {
+     position: absolute;
+     top: -33px;
+     left: 56px;
+     width: 65.9%;
+}
+
+.video-items .video-image {
+     width: 340px;
+     height: 200px;
+     overflow: hidden;
+     overflow: hidden;
+     position: relative;
+}
+
+.video-items .video-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     overflow: hidden;
+}
+
+.video-items .video-image video {
+     position: absolute;
+     top: -5px;
+     left: 45px;
+     width: 72.90%;
+     height: 100%;
+}
+
+.video-text {
+     width: 516px;
+     font-size: 16px;
+}
+
+.video-text h1 {
+     font-size: 3em;
+     letter-spacing: .80px;
+     font-weight: 800;
+     line-height: 1.3;
+     margin-bottom: 20px;
+}
+
+.video-text p {
+     font-size: 1.3em;
+     line-height: 1.4;
+     width: 64%;
+}
+
+/* ================ Ending Videos Hero Section  ================ */
+
+
+
+
+
+
+/* ================== Starting Questions section ==================  */
+#question-sect {
+     margin-top: 60px;
+     width: 100%;
+     border-bottom: 10px solid var(--border-color);
+     padding-bottom: 50px;
+}
+
+#question-sect .questions-cont {
+     margin-top: 30px;
+     width: 100%;
+     flex-direction: column;
+}
+
+#question-sect h1 {
+     font-size: 3em;
+     font-weight: 700;
+     letter-spacing: .80px;
+     text-align: center;
+}
+
+.questions-cont .question-items {
+     width: 80%;
+     background: var(--question-bg);
+     padding: 10px 17px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 16px;
+     margin-bottom: 10px;
+     transition: .2s ease-in;
+}
+
+.questions-cont .question-items:hover {
+     background: var(--question-hover-clr);
+}
+
+.questions-cont .question-items .question {
+     align-items: center;
+}
+
+.questions-cont .question-items .question p {
+     font-size: 1.4em;
+}
+
+.questions-cont .question-items .answer {
+     height: 0px;
+     overflow: hidden;
+     margin-top: 6px;
+     transition: height .2s ease-in;
+}
+
+.questions-cont .question-items .answer.active {
+     height: fit-content;
+}
+
+.questions-cont .question-items .answer p {
+     font-size: 1.1em;
+     text-align: left !important;
+}
+
+.questions-cont .question-items .answer p:nth-child(2) {
+     margin-top: 20px;
+}
+
+.quesDets input {
+     background: var(--quesEmailBg);
+     color: var(---txt-primary-clr);
+     border: none;
+}
+
+.quesDets input::placeholder {
+     color: var(---txt-primary-clr);
+}
+
+/* ================== Ending Questions section ==================  */
+
+
+
+/* ============= Starting Footer section ============= */
+footer {
+     padding-top: 70px;
+}
+
+footer .footer-cont {
+     flex-wrap: wrap;
+}
+
+footer .footer-cont li {
+     list-style: none;
+     margin-bottom: 11px;
+     cursor: pointer;
+     cursor: pointer;
+     transition: .1s ease-in;
+}
+
+footer .footer-cont li:hover {
+     margin-left: 2px;
+}
+
+footer .footer-cont .company-name {
+     margin-top: 11px;
+}
+
+footer .dev-name {
+     margin-top: 20px;
+     padding-bottom: 10px;
+}
+
+footer select {
+     background: var(--gray-color);
+}
+
+footer .dev-name p {
+     text-align: center;
+}
+
+/* ============= Ending Footer section ============= */
+
+
+
+
+
+
+/* Starting Responsiveness  */
+@media(max-width: 733px) {
+     #hero .hero-txt {
+          font-size: 12px;
+     }
+}
+
+@media(max-width: 550px) {
+     #hero .hero-txt p {
+          font-size: 1.5em;
+          text-align: center;
+     }
+}
+
+@media(max-width: 619px) {
+     .details-sect input {
+          width: 70%;
+     }
+
+     .details-sect button {
+          font-size: .9em;
+     }
+
+}
+
+@media(max-width: 733px) {
+     header {
+          padding: 0px 9px 0px 0px !important;
+          justify-content: space-around !important;
+     }
+}
+
+@media(max-width: 400px) {
+     header {
+          padding: 0px -1px 0px 0px !important;
+          justify-content: space-around !important;
+     }
+}
+
+@media(max-width: 423px) {
+     header .header-content {
+          gap: 8px !important;
+          font-size: 15px;
+     }
+
+     header .logo img {
+          width: 145px !important;
+     }
+}
+
+@media(max-width: 455px) {
+     .details-sect {
+          height: 46px !important;
+     }
+
+     .common-margin {
+          margin-left: 3px;
+     }
+}
+
+@media(max-width: 401px) {
+     .details-sect {
+          flex-direction: column;
+          height: fit-content !important;
+     }
+
+     .details-sect input {
+          width: 95%;
+          height: 41px;
+     }
+
+     .details-sect button {
+          height: 41px;
+          margin-left: 0 !important;
+          margin-top: 8px;
+     }
+
+}
+
+
+
+@media(max-width: 438px) {
+     #hero .hero-txt {
+          font-size: 11px;
+     }
+
+     #hero .hero-txt h1:nth-child(1) {
+          font-weight: 2.7em !important;
+          font-weight: 700 !important;
+     }
+}
+
+@media(max-width: 868px) {
+
+     .video-text h1,
+     p {
+          text-align: center;
+     }
+
+     .video-text {
+          width: 100% !important;
+          text-align: center;
+     }
+
+     .video-text p {
+          width: 100% !important;
+     }
+
+     #videos-sect .video-items {
+          padding-top: 50px !important;
+          padding-bottom: 60px !important;
+
+     }
+
+     @media(max-width: 761px) {
+          .video-text {
+               font-size: 13px !important;
+          }
+     }
+}
+
+@media(max-width: 500px) {
+     .video-text h1 {
+          font-size: 2.4em !important;
+          font-weight: 700;
+     }
+}
+
+@media(max-width: 715px) {
+     .questions-cont .question-items {
+          padding: 10px 17px;
+          font-size: 12px;
+     }
+
+     #question-sect h1 {
+          font-size: 2em !important;
+     }
+}
+
+@media(max-width: 367px) {
+     .questions-cont .question-items .question p {
+          text-align: left;
+     }
+}
+
+@media(max-width: 430px) {
+
+     footer .foot-3,
+     .foot-4 {
+          margin-top: 20px;
+     }
+}

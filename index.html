@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Netflix Clone | Aman Raj</title>
+     <!-- webpage icon  -->
+     <link rel="shortcut icon" href="images/netflix-icon.png" type="image/x-icon">
+     <!--  fontawesome icon cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Css link  -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Javascript link  -->
+     <script defer src="script.js"></script>
+</head>
+
+<body>
+     <div id="main-hero">
+          <div class="hero-overlay"></div>
+          <!--  ================== Starting Header Section ==================   -->
+          <header id="header" class="flex flex-between">
+               <div class="logo full-flex"><img src="images/logo.png" alt=".."></div>
+               <div class="header-content full-flex">
+                    <select id="language" class="txt-white">
+                         <option class="txt-white">English</option>
+                         <option class="txt-white">Hindi</option>
+                    </select>
+                    <button class="btn-primary">Sign In</button>
+                    <div class="themes-option">
+                         <i class="fa-solid fa-sun" id="themeIcn"></i>
+                    </div>
+               </div>
+          </header>
+          <!--  ================== Ending Header Section ==================   -->
+
+
+          <!-- ============== Starting Hero Section  ============== -->
+          <div id="hero" class="full-flex" style="flex-direction: column;">
+               <div class="hero-txt full-flex" style="flex-direction: column;">
+                    <h1 style="color: white;">Enjoy big movies, hit series and more from ₹ 149.</h1>
+                    <p style="color: white;">Join today. Cancel anytime.</p>
+                    <p style="color: white;">Ready to watch? Enter your email to create or restart your membership.</p>
+               </div>
+
+               <div class="details-sect full-flex">
+                    <input class="txt-white" type="text" placeholder="Email Address">
+                    <button class="common-margin btn-primary" style="color: white;">Get Started</button>
+               </div>
+          </div>
+          <!-- ============== Ending Hero Section  ============== -->
+     </div>
+
+
+
+     <!-- ============== Starting Videos Hero Section  ============== -->
+     <div id="videos-sect">
+          <div class="video-items flex flex-around">
+               <div class="video-text">
+                    <h1 class="txt-white">Enjoy on your TV</h1>
+                    <p class="txt-white">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players
+                         and more.</p>
+               </div>
+               <div class="video-image full-flex" style="flex-direction: column;">
+                    <img src=" images/Tv-1.png">
+                    <video src="videos/video-1.m4v" autoplay muted loop></video>
+               </div>
+          </div>
+
+          <div class="video-items flex flex-around" style="flex-direction: row-reverse;">
+               <div class="video-text">
+                    <h1 class="txt-white">Download your shows to watch offline</h1>
+                    <p class="txt-white">Save your favourites easily and always have something to watch.</p>
+               </div>
+               <div class="video-image full-flex" style="flex-direction: column;">
+                    <img src="images/image-2.jpg">
+               </div>
+          </div>
+
+          <div class="video-items flex flex-around third">
+               <div class="video-text">
+                    <h1 class="txt-white">Watch everywhere</h1>
+                    <p class="txt-white">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                         and more.</p>
+               </div>
+               <div class="video-image full-flex" style="flex-direction: column;">
+                    <img src="images/img-3.png">
+                    <video src="videos/video-2.m4v" autoplay muted loop></video>
+               </div>
+          </div>
+
+          <div class="video-items flex flex-around" style="flex-direction: row-reverse;">
+               <div class="video-text">
+                    <h1 class="txt-white">Create profiles for kids</h1>
+                    <p class="txt-white">Send children on adventures with their favourite characters in a space made
+                         just for them—free with your membership.</p>
+               </div>
+               <div class="video-image full-flex" style="flex-direction: column;">
+                    <img src="images/img-4.png">
+               </div>
+          </div>
+     </div>
+     <!-- ============== Ending Videos Hero Section  ============== -->
+
+
+
+     <!-- ================== Starting Questions section ================== -->
+     <div id="question-sect">
+          <h1 class="txt-white">Frequently Asked Questions</h1>
+          <div class="questions-cont full-flex">
+               <div class="question-items">
+                    <div class="question flex flex-between">
+                         <p class="txt-white">What is Netflix?</p>
+                         <h5 class="txt-white">Hide</h5>
+                    </div>
+                    <div class="answer">
+                         <p class="txt-white">Netflix is a streaming service that offers a wide variety of award-winning
+                              TV shows, movies,
+                              anime, documentaries and more – on thousands of internet-connected devices.</p>
+                         <p class="txt-white">You can watch as much as you want, whenever you want, without a single ad
+                              – all for one low
+                              monthly price. There's always something new to discover, and new TV shows and movies are
+                              added every week!</p>
+                    </div>
+               </div>
+
+               <div class="question-items">
+                    <div class="question flex flex-between">
+                         <p class="txt-white">How much does Netflix cost?</p>
+                         <h5 class="txt-white">Hide</h5>
+                    </div>
+                    <div class="answer">
+                         <p class="txt-white">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming
+                              device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra
+                              costs, no contracts.</p>
+                    </div>
+               </div>
+
+               <div class="question-items">
+                    <div class="question flex flex-between">
+                         <p class="txt-white">Where I can watch?</p>
+                         <h5 class="txt-white">Hide</h5>
+                    </div>
+                    <div class="answer">
+                         <p class="txt-white">Watch anywhere, anytime. Sign in with your Netflix account to watch
+                              instantly on the web at netflix.com from your personal computer or on any
+                              internet-connected device that offers the Netflix app, including smart TVs, smartphones,
+                              tablets, streaming media players and game consoles.</p>
+                         <p class="txt-white">You can also download your favourite shows with the iOS, Android, or
+                              Windows 10 app. Use downloads to watch while you're on the go and without an internet
+                              connection. Take Netflix with you anywhere.</p>
+                    </div>
+               </div>
+
+               <div class="question-items">
+                    <div class="question flex flex-between">
+                         <p class="txt-white">How do I cancel?</p>
+                         <h5 class="txt-white">Hide</h5>
+                    </div>
+                    <div class="answer">
+                         <p class="txt-white">Netflix is flexible. There are no annoying contracts and no commitments.
+                              You can easily cancel your account online in two clicks. There are no cancellation fees –
+                              start or stop your account anytime.</p>
+                    </div>
+               </div>
+
+               <div class="question-items">
+                    <div class="question flex flex-between">
+                         <p class="txt-white">What can I watch on Netflix?</p>
+                         <h5 class="txt-white">Hide</h5>
+                    </div>
+                    <div class="answer">
+                         <p class="txt-white">Netflix has an extensive library of feature films, documentaries, TV
+                              shows, anime, award-winning Netflix originals, and more. Watch as much as you want,
+                              anytime you want.</p>
+                    </div>
+               </div>
+
+               <div class="question-items">
+                    <div class="question flex flex-between">
+                         <p class="txt-white">Is Netflix for kids?</p>
+                         <h5 class="txt-white">Hide</h5>
+                    </div>
+                    <div class="answer">
+                         <p class="txt-white">The Netflix Kids experience is included in your membership to give parents
+                              control while kids enjoy family-friendly TV shows and films in their own space.t.</p>
+                         <p class="txt-white">Kids profiles come with PIN-protected parental controls that let you
+                              restrict the maturity rating of content kids can watch and block specific titles you don’t
+                              want kids to see.</p>
+                    </div>
+               </div>
+
+          </div>
+          <div class="hero-txt full-flex" style="flex-direction: column; margin-top: 24px;">
+               <p class="txt-white common-para">Ready to watch? Enter your email to create or restart your membership.
+               </p>
+          </div>
+
+          <div class="details-sect full-flex quesDets">
+               <input type="text" placeholder="Email Address">
+               <button class="common-margin btn-primary" style="color: white;">Get Started</button>
+          </div>
+     </div>
+     <!-- ================== Ending Questions section ================== -->
+
+
+     <!-- Starting Footer section  -->
+     <footer>
+          <div class="footer-cont flex flex-around">
+               <div class="foot-1">
+                    <li class="txt-white">FAQ</li>
+                    <li class="txt-white">Investor Relations</li>
+                    <li class="txt-white">Privacy</li>
+                    <li class="txt-white">Speed Test</li>
+                    <div class="header-content full-flex">
+                         <select id="language" class="txt-white">
+                              <option class="txt-white">English</option>
+                              <option class="txt-white">Hindi</option>
+                         </select>
+                    </div>
+                    <li class="txt-white company-name">Netflix India</li>
+               </div>
+               <div class="foot-2">
+                    <li class="txt-white">Help center</li>
+                    <li class="txt-white">Jobs</li>
+                    <li class="txt-white">Cookie Preferences</li>
+                    <li class="txt-white">Legal Notice</li>
+               </div>
+               <div class="foot-3">
+                    <li class="txt-white">Account</li>
+                    <li class="txt-white">Ways to watch</li>
+                    <li class="txt-white">Corporate Information</li>
+                    <li class="txt-white">Only on Netflix</li>
+               </div>
+               <div class="foot-4">
+                    <li class="txt-white">Media center</li>
+                    <li class="txt-white">Terms of use</li>
+                    <li class="txt-white">Contact us</li>
+               </div>
+          </div>
+
+          <div class="dev-name">
+               <p class="txt-white">&copy; 2023 Designed and developed by Aman Raj from Aurangabad ('bihar')</p>
+          </div>
+     </footer>
+     <!-- Ending Footer section  -->
+
+</body>
+
+</html>
